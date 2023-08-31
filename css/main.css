@@ -1,0 +1,679 @@
+/*start the golab rules */
+*
+{
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: "Work Sans", sans-serif;
+    color:var(--maincolor3);
+}
+h2
+{ 
+
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 400;
+    font-family: "Times New Roman",Times,serif;
+}
+ a
+{
+text-decoration: none;
+color: white;
+}
+button:hover
+{
+    transition:all  1s ease-in-out .1s ;
+}
+
+:root
+{
+    --maincolor:#56AED4;
+    --maincolor2:#34495E;
+    --maincolor3:#686868;
+    --mainwidth :85%;
+
+}
+/*end the golab rules */
+/*start the fixed-navbar*/
+   .fixed-navbar
+   {
+       background-color: black;
+       position: fixed;
+       overflow: hidden;
+       padding: 10px 5%;
+       width: 100%;
+       z-index: 2;
+   }
+   .fixed-navbar div
+   {
+       color: white;
+       float: left;
+   }
+   .fixed-navbar img
+   {
+       float: right;
+       width: 30px;
+   }
+/*end the fixed-navbar*/
+
+/*start the first */
+.first
+{
+    background-image: url("../img/1.jpg");
+    background-size: cover;
+    height: 500px;
+    text-transform: uppercase;
+    position: relative;
+
+}
+.first-black
+{
+    background-color: black;
+    opacity: 0.8;
+    height: inherit;
+    padding: 60px 0;
+  
+}
+/*
+.first-black:hover
+{
+    color:white
+}*/
+.first h1
+{
+    color: rgb(223, 211, 211,.5);
+    font-size: 140px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+    transition: all 1s ease-in-out;
+    
+}
+.first p
+{
+    color: rgb(223, 211, 211,.5);
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin:15px 0;
+    transition: all 1s ease-in-out;
+}
+.first h1:hover
+,.first p:hover{
+    color:white
+}
+.first button 
+{
+   
+    font-size: 20px;
+    padding:10px;
+    text-align: center;
+    background-color:#3A5154;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin: 15px 0;
+    position: absolute;
+    left: 45%;
+    transition: all 1s ease-in-out;
+    
+}
+.first button  a
+{
+    font-weight: 20px;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+.first button:hover
+{
+    background-color:var(--maincolor2);
+}
+.first button  a:hover{
+    color: black;
+}
+/*end the first */
+
+
+/*start the navbar */
+.navbar
+{
+    overflow: hidden;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+}
+.navbar .navbar-width
+{
+    width: var(--mainwidth);
+    margin: auto;
+}
+.navbar .navbar-logg
+{
+    float: left;
+    padding: 10px ;
+    font-size: 30px;
+    transition: all 1s ease-in-out;
+}
+.navbar .navbar-logg .fas{
+    transition: all 1s ease-in-out;  
+}
+.navbar .navbar-logg:hover .fas
+{
+    color: red;;      
+    transform: rotate(360deg);
+}
+.navbar .navbar-links
+{
+float: right;
+}
+.navbar .navbar-links .first-ul
+{
+    padding: 14px 0px;
+}
+.navbar .navbar-links  li
+{
+list-style-type: none;
+display: inline-block;
+}
+.navbar .navbar-links  .active
+{
+    background-color:#333333;
+    border-top:2px solid  var(--maincolor)
+}
+.navbar .navbar-links  li:hover
+{
+    background-color:#333333;
+    border-top:2px solid  var(--maincolor)
+}
+.navbar .navbar-links a
+{
+font-size: 20px;
+padding: 10px ;
+
+}
+
+.navbar .navbar-links .second-ul
+{
+ display: none;
+ background-color: #686868;;
+ margin: 10px 2px;
+}
+
+.navbar .navbar-links ul li:hover  .second-ul 
+{
+    display: block;
+    position: absolute;
+}
+.navbar .navbar-links .second-ul li 
+{
+ display: block;
+ width:160px;
+ padding:10px;
+ border-bottom :1px solid black; 
+}
+.navbar .navbar-links .second-ul li:hover
+{
+    background-color: var(--maincolor);
+    padding-left: 15px;
+    transition: all 1s ease-in-out ;
+}
+
+/*end the navbar */
+
+/*start the second*/
+ .second
+ {
+  color:var(--maincolor3);
+  width: var(--mainwidth);
+  margin:50px auto;
+  display: grid;
+  grid-template-columns:repeat(3 , 1fr);
+  justify-content: space-around;
+  grid-gap: 30px;
+  
+ } 
+
+.second .second-left h2
+{
+    margin: 0 0 30px 0;
+    line-height: normal;
+    font-size: 28px;
+}
+
+.second .second-left p 
+{
+  margin-bottom: 20px;
+}
+.second .second-center p 
+{
+    margin: 25px 5px;
+}
+.second .second-center p:first-of-type
+{
+    margin: 15px 5px;
+}
+.second .second-center p  span
+{
+    color:var(--maincolor);
+}
+.second .second-center .reasons 
+{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    justify-content: space-around;
+    grid-gap: 10px;
+}
+.second .second-center .reasons p:first-child
+{
+    font-size: 70px;
+line-height: .85em;
+}
+.second .second-right .Blog
+{
+    display: grid;
+    grid-template-columns:auto 1fr;
+    justify-content: space-around;
+    grid-gap: 10px;
+    margin: 20px 10px;
+}
+.second .second-right .Blog div p
+{
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    line-height: 1.3em;
+
+}
+.second  button
+{
+    color:white;
+    padding: 10px 15px;
+    margin: 5px;
+    line-height: .85em;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: var(--maincolor);
+}
+.second  button:hover
+{
+    background-color: var(--maincolor2);
+}
+/*end the second*/
+/*start the third */
+.third
+  {
+
+    background-image: url("../img/2.jpg");
+    background-size: cover;
+    height: 500px;
+    color: black;
+
+  }
+.third .third-white
+{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    display: grid;
+    grid-template-columns:30% 50%;
+ 
+    justify-content: space-evenly;
+    grid-gap: 10px;
+}
+
+.third  .third-left a
+{
+margin: auto;
+line-height: 400px;
+font-size: 120px;
+color: var(--maincolor);
+padding: 20px;
+border: 2px solid var(--maincolor3);
+border-radius: 50%;
+padding: 50px;
+transition: all 1s ease-in-out;
+}
+.third  .third-left a:hover
+{
+    color:  white;
+  background-color: var(--maincolor);
+}
+.third  .third-left a .rotate{
+    transition: all 1s ease-in-out;
+}
+.third  .third-left a:hover .rotate
+{   
+    transform: rotate(360deg);
+}
+.third .third-right
+{
+    position: relative;
+}
+.third .third-right h2
+{
+ position: absolute;
+ top: 20%;
+ margin-bottom: 30px;
+}
+.third .third-right p
+{   
+    position: absolute;
+    top:40%;
+    line-height: 2.5;
+    margin-bottom: 30px;
+}
+.third .third-right button
+{   
+    position: absolute;
+    bottom:13%;
+    color:white;
+    padding: 15px 15px;
+    margin: 5px;
+    line-height: .85em;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: var(--maincolor);
+}
+.third .third-right button:last-of-type
+{
+    right:50%;
+    background-color: orange;
+
+}
+.third .third-right button:hover
+{
+    background-color: var(--maincolor2);
+}
+.third .third-right .DolorButtom:hover
+{
+
+    background-color:peru;
+}
+/*end the third*/
+
+/*start the four*/
+.four
+{
+    background-color: #eee;
+    padding: 100px 5px;
+} 
+.four .four-first 
+{
+    width:var(--mainwidth);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    margin: auto;
+
+}
+.four .four-first h2
+{
+margin-bottom: 40px;
+}
+
+.four .four-first p
+{
+margin: 10px 10px 40px 30px ;
+}
+
+.four .four-first img 
+{
+    width: 100%;
+    border-radius: 100%;
+}
+.four .four-left .four-grid
+{
+    display: grid;
+    grid-template-columns: 30% 1fr; 
+    grid-gap: 30px; 
+    margin: 30px 0px 15px;
+}
+.four .four-left .four-grid h3 a
+{
+    color:var(--maincolor)
+}
+.four .four-left .four-grid div p:first-of-type
+{
+ margin: 20px 5px 15px 0px;
+}
+.four .four-left .four-grid div p:last-of-type
+{
+ margin:0px;
+}
+.four .four-left .four-grid span 
+{
+    margin-right: 15px;
+}
+.four .four-right p:last-of-type
+{
+    border: 2px solid #E1E0DF;
+    padding:20px;
+    transition: all 1s ease-in-out;
+}
+.four .four-right p:last-of-type:hover
+{
+    background-color: white;
+}
+/*end the four*/
+/*start the five*/
+.five
+{
+    width:var(--mainwidth);
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 20px;
+    margin: auto;
+    padding: 100px 5px;
+}
+.five h2
+{
+    font-size: 22px;
+    border-bottom:2px solid #E1E0DF;
+    margin:10px 0 10px 0;
+    padding:10px 0;
+}
+.five ul 
+{
+    list-style: none;
+}
+.five ul li
+{
+    margin:25px 5px 10px 0px ;
+    padding:0px 5px 10px 0px ;;
+    border-bottom:1px solid #E1E0DF;
+}
+.five ul li a 
+{
+    color:var(--maincolor);
+ 
+}
+.five div p 
+{
+    margin:25px 5px 10px 0px ;
+}
+.five div input
+{
+    margin:25px 5px 15px 0px ;
+    display: block;
+    color:#E1E0DF;
+    border:1px solid #E1E0DF;
+    border-radius: 8px;
+    padding:10px;
+}
+.five  button
+{   
+    color:white;
+    padding: 10px 20px;
+    margin: 5px;
+    line-height: .85em;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: var(--maincolor);
+}
+
+.five button:hover
+{
+    background-color: var(--maincolor2);
+}
+.five .icons span
+{
+    margin:10px 10px 10px 0;
+    padding: 7px;
+    background-color: #eee;
+    border-radius: 50%;
+    transition: all 1s ease-in-out;
+}
+.five .icons span:hover
+{
+    color: white;
+}
+.five .first-span:hover
+ {
+     background-color: rgb(78, 78, 250);
+ }
+ .five .second-span:hover
+ {
+     background-color: red;
+ }
+ .five .thirth-span:hover
+ {
+     background-color: rgb(218, 101, 101)
+ }
+ .five .fourth-span:hover
+ {
+    background-color: #56AED4;
+ }
+ .five .fivth-span:hover
+ {
+     background-color: #56AED4;
+ }
+ .five .sixth-span:hover
+ {
+     background-color: red;
+ }
+.five div:nth-of-type(3) p a
+{
+    color:var(--maincolor);
+    margin-left:15px;
+} 
+/*end the five*/
+
+/*start the six*/
+.six
+{
+    background-color: #eee;
+    position: relative;
+}
+.six-width
+{
+    width:90%;
+}
+.six button
+{
+font-size: 25px;;
+ font-weight: 400px;
+ background-color:var(--maincolor2);
+ border-radius: 8px;
+ border:none;
+ padding: 10px 20px;
+ position: absolute;
+ left: 45%;
+ top:-17%;
+ transition: all 1s ease-in-out;
+}
+.six button:hover
+{
+ background-color:var(--maincolor);
+}
+.six button .fas{
+    transition: all 1s ease-in-out;
+}
+.six button:hover .fas
+{
+color:red;
+transform: rotate(360deg);
+}
+.six p
+{
+    text-align: center;
+    padding: 60px 0 ;
+}
+.six p a
+{
+    color: var(--maincolor);
+}
+
+/*end the six*/
+/*.second-hover-left,.second-hover-top,.second-hover-right
+{
+    position: relative;
+
+}
+.second-hover-left:after
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0px;
+    z-index: -1;
+    background-color: #333333;
+    transition: width  1s ease-in-out;
+
+}
+
+.second-hover-left:hover:after
+{
+    width: 100%;
+
+}
+
+
+
+.second-hover-top:after
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0px;
+    z-index: -1;
+    background-color: #333333;
+    transition: height 1s ease-in-out;
+
+}
+
+.second-hover-top:hover:after
+{
+    height: 100%;
+
+}
+
+
+
+
+.second-hover-right:after
+{
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0px;
+    z-index: -1;
+    background-color: #333333;
+    transition: width 1s ease-in-out;
+
+}
+
+.second-hover-right:hover:after
+{
+    width: 100%;
+
+}
